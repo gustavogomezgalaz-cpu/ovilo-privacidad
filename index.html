@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ovilo — Política de privacidad</title>
+<style>
+  /* Colores del tema de la app (src/ui/tema.ts): fondo oscuro y acento cian del holograma. */
+  :root { color-scheme: dark; --tinta:#F2F4FF; --papel:#07080D; --suave:#A3A9C7; --marca:#6EE7FF; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:2rem 1.25rem 4rem; background:var(--papel); color:var(--tinta);
+         font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:1rem;
+           max-width:42rem; margin:0 auto 2rem; flex-wrap:wrap; }
+  .marca { font-weight:800; font-size:1.35rem; color:var(--marca); letter-spacing:-.02em; }
+  nav { display:flex; gap:.25rem; }
+  nav button { font:inherit; font-size:.85rem; font-weight:600; cursor:pointer;
+               padding:.35rem .7rem; border-radius:999px; border:1px solid var(--suave);
+               background:transparent; color:var(--suave); }
+  nav button[aria-current="true"] { background:var(--marca); border-color:var(--marca); color:#07080D; }
+  h1 { font-size:1.6rem; line-height:1.25; margin:0 0 .35rem; letter-spacing:-.02em; }
+  h2 { font-size:1.05rem; margin:2rem 0 .4rem; }
+  .fecha { color:var(--suave); font-size:.9rem; margin:0 0 1.5rem; }
+  .intro { font-size:1.1rem; }
+  p, li { margin:0 0 .9rem; }
+  ul { padding-left:1.2rem; }
+  a { color:var(--marca); }
+  footer { max-width:42rem; margin:3rem auto 0; padding-top:1.25rem;
+           border-top:1px solid color-mix(in srgb, var(--suave) 35%, transparent);
+           color:var(--suave); font-size:.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <span class="marca">Ovilo</span>
+  <nav aria-label="Idioma"><button type="button" data-ir="es">ES</button><button type="button" data-ir="en">EN</button><button type="button" data-ir="pt">PT</button></nav>
+</header>
+<main>
+    <article lang="es" data-idioma="es" hidden>
+      <h1>Política de privacidad</h1>
+      <p class="fecha">Última revisión: 2026-09-24</p>
+      <p class="intro">Ovilo es un asistente de voz con alarma. Para entenderte tiene que oírte, y para contestar preguntas abiertas usa inteligencia artificial en la nube. Aquí está, sin letra chica, qué sale del teléfono, a dónde va y qué no.</p>
+      <h2>Lo que se queda en el teléfono</h2>
+      <p>Tus recordatorios, tus notas, tu nombre y tus ajustes se guardan en el teléfono. No hay cuentas ni registro y no te pedimos correo. Desinstalar la app borra todo eso.</p>
+      <h2>Lo que sale del teléfono, y solo cuando le hablas</h2>
+      <ul>
+        <li><strong>Tu voz.</strong> El micrófono se abre solo mientras tocas para hablar; la app no escucha en segundo plano. Ese audio viaja a nuestro servidor, que se lo pasa a OpenAI para convertirlo en texto.</li>
+        <li><strong>Lo que dices, en texto.</strong> Lo que el teléfono entiende por sí solo (crear o cambiar un recordatorio, por ejemplo) se resuelve ahí. Lo demás —una pregunta abierta, algo que no entendió— va a nuestro servidor y de ahí a OpenAI para contestarte. Para que la respuesta tenga sentido se envía junto con tu nombre y un resumen de tus recordatorios y notas.</li>
+        <li><strong>La voz de las respuestas (plan Pro).</strong> El texto de la respuesta va a OpenAI para convertirlo en voz.</li>
+        <li><strong>Un número al azar de esta instalación.</strong> Lo crea la app y no está ligado a ti ni a tu teléfono. Sirve para contar cuántas preguntas usaste hoy y aplicar el tope diario de tu plan.</li>
+        <li><strong>El clima.</strong> Para el informe de la mañana, la app le pide el clima a Open-Meteo con una ubicación aproximada, redondeada a unos 10 km. Open-Meteo no recibe nada más.</li>
+      </ul>
+      <p>Nuestro servidor no guarda tu audio ni tus frases: los procesa para contestarte y los descarta. Lo único que anota es cuánto costó cada consulta (fecha, tipo y cantidad de texto procesado), sin el contenido. OpenAI actúa como proveedor nuestro; según sus condiciones para empresas, no usa estos datos para entrenar sus modelos y puede conservarlos por un tiempo limitado para prevenir abusos. Todo viaja cifrado.</p>
+      <h2>Avisos</h2>
+      <p>Los recordatorios y el despertador se programan en el propio teléfono. La librería de avisos que usa la app incluye el componente de mensajería de Google (Firebase), que puede asignar al aparato un identificador técnico para entregar avisos. No usamos avisos enviados desde internet y ese identificador no lo pedimos, no lo recibimos ni lo guardamos.</p>
+      <h2>Permisos</h2>
+      <ul>
+        <li><strong>Micrófono</strong>, para oírte mientras tocas para hablar.</li>
+        <li><strong>Notificaciones, alarmas exactas y pantalla completa</strong>, para que un recordatorio suene a su hora como alarma y encienda la pantalla, también con el teléfono bloqueado. Por eso la app también se entera cuando el teléfono se reinicia o cambia la hora: para volver a programarlos.</li>
+        <li><strong>Mostrar sobre otras apps</strong> (opcional, lo activas tú en Ajustes), para dejar a tu asistente visible encima de otras apps. Mientras está visible, Android muestra un aviso fijo de la app.</li>
+        <li><strong>Huella</strong>, si la usas para ver algo privado. La comprueba Android: a la app solo le llega un sí o un no.</li>
+        <li><strong>Internet</strong>, para lo descrito arriba y para Google Play.</li>
+      </ul>
+      <p>El identificador de publicidad está bloqueado a propósito.</p>
+      <h2>Publicidad</h2>
+      <p>No hay anuncios. No hay seguimiento ni perfilado, y no vendemos ni compartimos datos con fines publicitarios.</p>
+      <h2>Compras</h2>
+      <p>Los planes Plus y Pro se pagan con Google Play, con tu cuenta. No vemos ni guardamos los datos de tu tarjeta. La app le pregunta a Google Play si tienes un plan activo.</p>
+      <h2>Edad</h2>
+      <p>Ovilo es para adultos y no está dirigida a niños.</p>
+      <h2>Cómo borrar tus datos</h2>
+      <p>Lo que vive en el teléfono se borra desde la app o al desinstalarla. En nuestro servidor no queda nada tuyo que borrar. Si quieres confirmar algo, escríbenos.</p>
+      <h2>Cambios en esta política</h2>
+      <p>Si la app pasa a hacer algo distinto con los datos, este texto cambia antes, y con él la fecha de arriba.</p>
+      <h2>Contacto</h2>
+      <p>Para cualquier duda sobre privacidad, escribe a <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. Contestamos.</p>
+    </article>
+    <article lang="en" data-idioma="en" hidden>
+      <h1>Privacy policy</h1>
+      <p class="fecha">Last reviewed: 2026-09-24</p>
+      <p class="intro">Ovilo is a voice assistant with an alarm. To understand you it has to hear you, and to answer open questions it uses artificial intelligence in the cloud. Here is, with no fine print, what leaves the phone, where it goes and what doesn't.</p>
+      <h2>What stays on the phone</h2>
+      <p>Your reminders, your notes, your name and your settings are stored on the phone. There are no accounts, no sign-up, and we never ask for an email address. Uninstalling the app deletes all of it.</p>
+      <h2>What leaves the phone, and only when you talk to it</h2>
+      <ul>
+        <li><strong>Your voice.</strong> The microphone only opens while you tap to talk; the app does not listen in the background. That audio goes to our server, which passes it to OpenAI to turn it into text.</li>
+        <li><strong>What you say, as text.</strong> Whatever the phone understands on its own (creating or changing a reminder, for example) is handled there. Everything else — an open question, something it didn't understand — goes to our server and from there to OpenAI to answer you. So the answer makes sense, it is sent together with your name and a summary of your reminders and notes.</li>
+        <li><strong>The voice of the answers (Pro plan).</strong> The text of the answer goes to OpenAI to be turned into speech.</li>
+        <li><strong>A random number for this installation.</strong> The app creates it and it is not tied to you or to your phone. It is used to count how many questions you used today and apply your plan's daily limit.</li>
+        <li><strong>The weather.</strong> For the morning briefing, the app asks Open-Meteo for the weather with an approximate location, rounded to about 10 km. Open-Meteo receives nothing else.</li>
+      </ul>
+      <p>Our server does not store your audio or your phrases: it processes them to answer you and discards them. The only thing it records is what each request cost (date, type and amount of text processed), without the content. OpenAI acts as our service provider; under its business terms it does not use this data to train its models and may keep it for a limited time to prevent abuse. Everything travels encrypted.</p>
+      <h2>Notifications</h2>
+      <p>Reminders and the alarm clock are scheduled on the phone itself. The notifications library the app uses includes Google's messaging component (Firebase), which may assign the device a technical identifier to deliver notifications. We don't use notifications sent over the internet, and we don't ask for, receive or store that identifier.</p>
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Microphone</strong>, to hear you while you tap to talk.</li>
+        <li><strong>Notifications, exact alarms and full screen</strong>, so a reminder rings on time like an alarm and turns the screen on, even with the phone locked. That is also why the app notices when the phone restarts or the time changes: to schedule them again.</li>
+        <li><strong>Display over other apps</strong> (optional, you turn it on in Settings), to keep your assistant visible on top of other apps. While it is visible, Android shows an ongoing notification from the app.</li>
+        <li><strong>Fingerprint</strong>, if you use it to see something private. Android checks it: the app only gets a yes or a no.</li>
+        <li><strong>Internet</strong>, for everything described above and for Google Play.</li>
+      </ul>
+      <p>The advertising identifier is deliberately blocked.</p>
+      <h2>Advertising</h2>
+      <p>There are no ads. No tracking, no profiling, and we don't sell or share data for advertising purposes.</p>
+      <h2>Purchases</h2>
+      <p>The Plus and Pro plans are paid through Google Play, with your account. We never see or store your card details. The app asks Google Play whether you have an active plan.</p>
+      <h2>Age</h2>
+      <p>Ovilo is for adults and is not directed at children.</p>
+      <h2>How to delete your data</h2>
+      <p>What lives on the phone is deleted from the app or by uninstalling it. Nothing of yours remains on our server to delete. If you want to confirm anything, write to us.</p>
+      <h2>Changes to this policy</h2>
+      <p>If the app ever does something different with data, this text changes first, and the date above with it.</p>
+      <h2>Contact</h2>
+      <p>For any privacy question, write to <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. We answer.</p>
+    </article>
+    <article lang="pt" data-idioma="pt" hidden>
+      <h1>Política de privacidade</h1>
+      <p class="fecha">Última revisão: 2026-09-24</p>
+      <p class="intro">Ovilo é um assistente de voz com alarme. Para te entender ele precisa te ouvir, e para responder perguntas abertas usa inteligência artificial na nuvem. Aqui está, sem letras miúdas, o que sai do celular, para onde vai e o que não sai.</p>
+      <h2>O que fica no celular</h2>
+      <p>Os seus lembretes, as suas notas, o seu nome e os seus ajustes ficam guardados no celular. Não há contas nem cadastro e nunca pedimos e-mail. Desinstalar o aplicativo apaga tudo isso.</p>
+      <h2>O que sai do celular, e só quando você fala com ele</h2>
+      <ul>
+        <li><strong>A sua voz.</strong> O microfone só abre enquanto você toca para falar; o aplicativo não escuta em segundo plano. Esse áudio vai para o nosso servidor, que o passa à OpenAI para virar texto.</li>
+        <li><strong>O que você diz, em texto.</strong> O que o celular entende sozinho (criar ou mudar um lembrete, por exemplo) é resolvido ali. O resto — uma pergunta aberta, algo que ele não entendeu — vai para o nosso servidor e de lá para a OpenAI para te responder. Para a resposta fazer sentido, vai junto com o seu nome e um resumo dos seus lembretes e notas.</li>
+        <li><strong>A voz das respostas (plano Pro).</strong> O texto da resposta vai para a OpenAI para virar voz.</li>
+        <li><strong>Um número aleatório desta instalação.</strong> O aplicativo o cria e ele não está ligado a você nem ao seu celular. Serve para contar quantas perguntas você usou hoje e aplicar o limite diário do seu plano.</li>
+        <li><strong>O clima.</strong> Para o resumo da manhã, o aplicativo pede o clima à Open-Meteo com uma localização aproximada, arredondada a uns 10 km. A Open-Meteo não recebe mais nada.</li>
+      </ul>
+      <p>O nosso servidor não guarda o seu áudio nem as suas frases: processa para te responder e descarta. A única coisa que ele anota é quanto custou cada consulta (data, tipo e quantidade de texto processado), sem o conteúdo. A OpenAI atua como nossa prestadora de serviço; segundo as condições dela para empresas, não usa esses dados para treinar os seus modelos e pode guardá-los por um tempo limitado para evitar abusos. Tudo viaja criptografado.</p>
+      <h2>Avisos</h2>
+      <p>Os lembretes e o despertador são programados no próprio celular. A biblioteca de avisos que o aplicativo usa inclui o componente de mensagens do Google (Firebase), que pode atribuir ao aparelho um identificador técnico para entregar avisos. Não usamos avisos enviados pela internet, e esse identificador nós não pedimos, não recebemos nem guardamos.</p>
+      <h2>Permissões</h2>
+      <ul>
+        <li><strong>Microfone</strong>, para te ouvir enquanto você toca para falar.</li>
+        <li><strong>Notificações, alarmes exatos e tela cheia</strong>, para que um lembrete toque na hora como alarme e acenda a tela, também com o celular bloqueado. Por isso o aplicativo também percebe quando o celular reinicia ou a hora muda: para programá-los de novo.</li>
+        <li><strong>Sobrepor a outros apps</strong> (opcional, você ativa nos Ajustes), para deixar o assistente visível por cima de outros aplicativos. Enquanto ele está visível, o Android mostra um aviso fixo do aplicativo.</li>
+        <li><strong>Digital</strong>, se você a usar para ver algo privado. Quem confere é o Android: ao aplicativo só chega um sim ou um não.</li>
+        <li><strong>Internet</strong>, para o que está descrito acima e para o Google Play.</li>
+      </ul>
+      <p>O identificador de publicidade está bloqueado de propósito.</p>
+      <h2>Publicidade</h2>
+      <p>Não há anúncios. Não há rastreamento nem perfilamento, e não vendemos nem compartilhamos dados para fins publicitários.</p>
+      <h2>Compras</h2>
+      <p>Os planos Plus e Pro são pagos pelo Google Play, com a sua conta. Não vemos nem guardamos os dados do seu cartão. O aplicativo pergunta ao Google Play se você tem um plano ativo.</p>
+      <h2>Idade</h2>
+      <p>Ovilo é para adultos e não é direcionado a crianças.</p>
+      <h2>Como apagar os seus dados</h2>
+      <p>O que fica no celular é apagado pelo aplicativo ou ao desinstalá-lo. No nosso servidor não fica nada seu para apagar. Se quiser confirmar algo, escreva para nós.</p>
+      <h2>Mudanças nesta política</h2>
+      <p>Se o aplicativo passar a fazer algo diferente com os dados, este texto muda antes, e a data acima junto.</p>
+      <h2>Contato</h2>
+      <p>Para qualquer dúvida sobre privacidade, escreva para <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. Respondemos.</p>
+    </article>
+</main>
+<footer>Ovilo · GusMar Studios · <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a></footer>
+<script>
+  var arts = document.querySelectorAll('[data-idioma]');
+  var btns = document.querySelectorAll('[data-ir]');
+  function mostrar(i) {
+    arts.forEach(function (a) { a.hidden = a.dataset.idioma !== i; });
+    btns.forEach(function (b) { b.setAttribute('aria-current', String(b.dataset.ir === i)); });
+    document.documentElement.lang = i;
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { mostrar(b.dataset.ir); }); });
+  // Arranca en el idioma del navegador si lo tenemos; si no, español.
+  var pref = (navigator.language || 'es').slice(0, 2);
+  mostrar(["es","en","pt"].indexOf(pref) >= 0 ? pref : 'es');
+</script>
+</body>
+</html>
