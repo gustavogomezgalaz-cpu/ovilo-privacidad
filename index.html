@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ovilo — Política de privacidad</title>
+<title>Ovilo — Política de privacidad y condiciones de uso</title>
 <style>
   /* Colores del tema de la app (src/ui/tema.ts): fondo oscuro y acento cian del holograma. */
   :root { color-scheme: dark; --tinta:#F2F4FF; --papel:#07080D; --suave:#A3A9C7; --marca:#6EE7FF; }
@@ -38,119 +38,200 @@
 </header>
 <main>
     <article lang="es" data-idioma="es" hidden>
-      <h1>Política de privacidad</h1>
-      <p class="fecha">Última revisión: 2026-09-24</p>
-      <p class="intro">Ovilo es un asistente de voz con alarma. Para entenderte tiene que oírte, y para contestar preguntas abiertas usa inteligencia artificial en la nube. Aquí está, sin letra chica, qué sale del teléfono, a dónde va y qué no.</p>
-      <h2>Lo que se queda en el teléfono</h2>
-      <p>Tus recordatorios, tus notas, tu nombre y tus ajustes se guardan en el teléfono. No hay cuentas ni registro y no te pedimos correo. Desinstalar la app borra todo eso.</p>
-      <h2>Lo que sale del teléfono, y solo cuando le hablas</h2>
+      <h1>Política de privacidad y condiciones de uso</h1>
+      <p class="fecha">Última actualización: 2026-09-25</p>
+      <p class="intro">Ovilo es un asistente de voz con alarma. Esta versión funciona sin servidor propio: no tiene preguntas abiertas a la inteligencia artificial ni voz pro. Aquí está, sin letra chica, qué se guarda en el teléfono, qué se conecta a internet y para qué.</p>
+      <h2>Lo que se guarda en el teléfono</h2>
+      <p>Tus recordatorios, tus notas, tu nombre y tus ajustes se guardan en el teléfono. No hay cuentas ni registro y no te pedimos correo. Si tienes activada la copia de seguridad de Android, Android puede incluir estos datos en la copia de tu cuenta de Google, como con otras apps. Desinstalar la app los borra del teléfono.</p>
+      <h2>Tu voz</h2>
+      <p>El micrófono se abre solo mientras tocas para hablar; la app no escucha en segundo plano. La voz la pasa a texto el reconocedor de voz de tu teléfono (el de Android), y Ovilo recibe solo ese texto y lo entiende en el teléfono. Si el idioma no está descargado en el teléfono, ese reconocedor, que es de Google, puede usar internet para dictar, según la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
+      <p>Esta versión no envía tu voz ni tus frases a nuestro servidor ni a OpenAI. Las respuestas las dice en voz alta la voz del propio teléfono.</p>
+      <h2>Lo que se conecta a internet en esta versión</h2>
       <ul>
-        <li><strong>Tu voz.</strong> El micrófono se abre solo mientras tocas para hablar; la app no escucha en segundo plano. Ese audio viaja a nuestro servidor, que se lo pasa a OpenAI para convertirlo en texto.</li>
-        <li><strong>Lo que dices, en texto.</strong> Lo que el teléfono entiende por sí solo (crear o cambiar un recordatorio, por ejemplo) se resuelve ahí. Lo demás —una pregunta abierta, algo que no entendió— va a nuestro servidor y de ahí a OpenAI para contestarte. Para que la respuesta tenga sentido se envía junto con tu nombre y un resumen de tus recordatorios y de tus notas más recientes (hasta 15). Por eso, no guardes en las notas claves ni datos que no quieras compartir.</li>
-        <li><strong>La voz de las respuestas (plan Pro).</strong> El texto de la respuesta va a OpenAI para convertirlo en voz.</li>
-        <li><strong>Un número al azar de esta instalación.</strong> Lo crea la app y no está ligado a ti ni a tu teléfono. Sirve para contar cuántas preguntas usaste hoy y aplicar el tope diario de tu plan.</li>
-        <li><strong>El clima.</strong> Para el informe de la mañana, la app le pide el clima a Open-Meteo con la ciudad que tú elijas (sus coordenadas, redondeadas a unos 10 km). La app no usa la ubicación del teléfono. Open-Meteo no recibe nada más.</li>
-        <li><strong>Una respuesta que reportas.</strong> Si tocas «Reportar esta respuesta», nos llegan esa pregunta y esa respuesta para revisarlas. Las guardamos solo mientras las revisamos.</li>
+        <li><strong>El clima.</strong> Para el informe de la mañana, la app le pide el clima a <a href="https://open-meteo.com/">Open-Meteo</a> con las coordenadas de la ciudad que elegiste, redondeadas a unos 10 km. La app no usa la ubicación del teléfono.</li>
+        <li><strong>La búsqueda de ciudad.</strong> Cuando buscas tu ciudad en Ajustes, la app le manda a Open-Meteo el texto que escribes y el idioma de la app, para mostrarte las ciudades que calzan.</li>
+        <li><strong>Las compras.</strong> La app le pregunta a Google Play si tienes un plan activo, y los pagos pasan por Google Play.</li>
       </ul>
-      <p>Nuestro servidor no guarda tu audio ni tus frases: los procesa para contestarte y los descarta. Lo único que anota es cuánto costó cada consulta (fecha, tipo y cantidad de texto procesado), sin el contenido. OpenAI actúa como proveedor nuestro: según sus condiciones para empresas, no usa estos datos para entrenar sus modelos, pero puede conservarlos hasta 30 días para vigilar abusos, y después los borra. Todo viaja cifrado.</p>
+      <p>Como en toda conexión a internet, Open-Meteo ve la dirección IP desde la que llega la consulta. Fuera de eso, a Open-Meteo solo le llegan las coordenadas redondeadas o el texto de la búsqueda con el idioma. Todo viaja cifrado.</p>
+      <h2>Cuando se active la función de preguntas abiertas y la voz pro</h2>
+      <p>Una versión futura podrá contestar preguntas abiertas con inteligencia artificial y hablar con una voz más natural. No tiene fecha. Antes de que llegue, esta política se actualiza. Así funcionaría:</p>
+      <ul>
+        <li><strong>Lo que dices, en texto.</strong> Lo que el teléfono entiende por sí solo (crear o cambiar un recordatorio, por ejemplo) se sigue resolviendo ahí. Una pregunta abierta, o algo que no entendió, iría a nuestro servidor y de ahí a OpenAI para contestarte. Para que la respuesta tenga sentido se enviaría junto con tu nombre y un resumen de tus recordatorios y de tus notas más recientes (hasta 15). Por eso, no guardes en las notas claves ni datos que no quieras compartir.</li>
+        <li><strong>La voz pro.</strong> El texto de la respuesta iría a OpenAI para convertirlo en voz.</li>
+        <li><strong>Un número al azar de esta instalación.</strong> Lo crea la app y no está ligado a ti ni a tu teléfono. Serviría para contar cuántas preguntas usaste hoy y aplicar el tope diario de tu plan.</li>
+        <li><strong>Una respuesta que reportas.</strong> Si tocas «Reportar esta respuesta», nos llegarían esa pregunta y esa respuesta para revisarlas. Las guardaríamos solo mientras las revisamos.</li>
+      </ul>
+      <p>Nuestro servidor no guardaría tus frases: las procesaría para contestarte y las descartaría. Solo anotaría cuánto costó cada consulta (fecha, tipo y cantidad de texto procesado), sin el contenido. OpenAI actuaría como proveedor nuestro: según sus condiciones para empresas, no usa estos datos para entrenar sus modelos, pero puede conservarlos hasta 30 días para vigilar abusos, y después los borra.</p>
       <h2>Avisos</h2>
       <p>Los recordatorios y el despertador se programan en el propio teléfono. La librería de avisos que usa la app incluye el componente de mensajería de Google (Firebase), que puede asignar al aparato un identificador técnico para entregar avisos. No usamos avisos enviados desde internet y ese identificador no lo pedimos, no lo recibimos ni lo guardamos.</p>
       <h2>Permisos</h2>
       <ul>
-        <li><strong>Micrófono</strong>, para oírte mientras tocas para hablar.</li>
-        <li><strong>Notificaciones, alarmas exactas y pantalla completa</strong>, para que un recordatorio suene a su hora como alarma y encienda la pantalla, también con el teléfono bloqueado. Por eso la app también se entera cuando el teléfono se reinicia o cambia la hora: para volver a programarlos.</li>
-        <li><strong>Mostrar sobre otras apps</strong> (opcional, lo activas tú en Ajustes), para dejar a tu asistente visible encima de otras apps. Mientras está visible, Android muestra un aviso fijo de la app.</li>
-        <li><strong>Internet</strong>, para lo descrito arriba y para Google Play.</li>
+        <li><strong>Micrófono</strong> (RECORD_AUDIO): para oírte mientras tocas para hablar.</li>
+        <li><strong>Ajustes de audio</strong> (MODIFY_AUDIO_SETTINGS): para manejar el sonido mientras te escucha y te contesta.</li>
+        <li><strong>Notificaciones</strong> (POST_NOTIFICATIONS): para mostrarte los recordatorios y las alarmas.</li>
+        <li><strong>Alarmas exactas</strong> (USE_EXACT_ALARM): para que un recordatorio suene en el minuto justo, no «más o menos a esa hora».</li>
+        <li><strong>Pantalla completa</strong> (USE_FULL_SCREEN_INTENT): para que la alarma encienda la pantalla y se vea entera, también con el teléfono bloqueado.</li>
+        <li><strong>Mantener el teléfono despierto</strong> (WAKE_LOCK): para que el teléfono no se duerma mientras suena una alarma.</li>
+        <li><strong>Vibración</strong> (VIBRATE): para que la alarma también vibre.</li>
+        <li><strong>Saber cuándo se encendió el teléfono</strong> (RECEIVE_BOOT_COMPLETED): para volver a programar tus alarmas después de un reinicio. Por lo mismo, la app se entera cuando cambia la hora.</li>
+        <li><strong>Internet</strong> (INTERNET): para el clima, la búsqueda de ciudad y Google Play.</li>
+        <li><strong>Compras de Google Play</strong> (BILLING): para comprar y comprobar un plan.</li>
       </ul>
       <p>El identificador de publicidad está bloqueado a propósito.</p>
       <h2>Publicidad</h2>
       <p>No hay anuncios. No hay seguimiento ni perfilado, y no vendemos ni compartimos datos con fines publicitarios.</p>
       <h2>Compras</h2>
-      <p>Los planes Plus y Pro se pagan con Google Play, con tu cuenta. No vemos ni guardamos los datos de tu tarjeta. La app le pregunta a Google Play si tienes un plan activo.</p>
+      <p>El plan Plus se paga con Google Play, con tu cuenta. No vemos ni guardamos los datos de tu tarjeta: los maneja Google.</p>
       <h2>Edad</h2>
       <p>Ovilo es para adultos y no está dirigida a niños.</p>
       <h2 id="borrar" data-borrar>Cómo borrar tus datos</h2>
-      <p>Lo que vive en el teléfono se borra desde la app (cada recordatorio y cada nota) o al desinstalarla. En nuestro servidor no queda nada tuyo que borrar, salvo una respuesta que hayas reportado. Lo que pasó por OpenAI se borra solo a los 30 días como máximo. Para pedir que borremos una respuesta reportada o confirmar cualquier cosa, escribe a <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <p>Lo que vive en el teléfono se borra desde la app (cada recordatorio y cada nota) o al desinstalarla. Esta versión no envía nada tuyo a nuestro servidor, así que ahí no hay nada que borrar. Para confirmar cualquier cosa, escribe a <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <h2 id="condiciones" data-condiciones>Condiciones de uso</h2>
+      <ul>
+        <li>Ovilo se ofrece tal cual. Hacemos lo posible para que funcione bien, pero no podemos prometer que nunca falle.</li>
+        <li>Las alarmas dependen del teléfono: el ahorro de batería, los permisos que le des y el volumen pueden atrasarlas o silenciarlas. No uses Ovilo en lugar de una alarma médica o de cualquier aviso crítico.</li>
+        <li>Las suscripciones las cobra y las renueva Google Play, y se cancelan en Google Play.</li>
+        <li>Cuando un plan tiene prueba gratis de 7 días, se da una vez por cuenta de Google. Si no la cancelas antes de que termine, Google Play cobra el plan al terminar la prueba.</li>
+        <li>No uses la app para nada ilegal.</li>
+        <li>Si tienes una duda o un problema, escribe a <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</li>
+      </ul>
       <h2>Cambios en esta política</h2>
       <p>Si la app pasa a hacer algo distinto con los datos, este texto cambia antes, y con él la fecha de arriba.</p>
+      <ul>
+        <li>2026-09-25: esta versión no tiene servidor; la voz la pasa a texto el reconocedor del teléfono. Lo del servidor y OpenAI queda para cuando se activen las preguntas abiertas. Se quita el permiso «Mostrar sobre otras apps», se explica cada permiso, se precisa qué recibe Open-Meteo y se agregan las condiciones de uso.</li>
+      </ul>
       <h2>Contacto</h2>
       <p>Para cualquier duda sobre privacidad, escribe a <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. Contestamos.</p>
     </article>
     <article lang="en" data-idioma="en" hidden>
-      <h1>Privacy policy</h1>
-      <p class="fecha">Last reviewed: 2026-09-24</p>
-      <p class="intro">Ovilo is a voice assistant with an alarm. To understand you it has to hear you, and to answer open questions it uses artificial intelligence in the cloud. Here is, with no fine print, what leaves the phone, where it goes and what doesn't.</p>
-      <h2>What stays on the phone</h2>
-      <p>Your reminders, your notes, your name and your settings are stored on the phone. There are no accounts, no sign-up, and we never ask for an email address. Uninstalling the app deletes all of it.</p>
-      <h2>What leaves the phone, and only when you talk to it</h2>
+      <h1>Privacy policy and terms of use</h1>
+      <p class="fecha">Last updated: 2026-09-25</p>
+      <p class="intro">Ovilo is a voice assistant with an alarm. This version works without a server of our own: it has no open questions to artificial intelligence and no pro voice. Here is, with no fine print, what is stored on the phone, what connects to the internet and why.</p>
+      <h2>What is stored on the phone</h2>
+      <p>Your reminders, your notes, your name and your settings are stored on the phone. There are no accounts, no sign-up, and we never ask for an email address. If Android backup is turned on, Android may include this data in your Google account backup, as it does with other apps. Uninstalling the app deletes it from the phone.</p>
+      <h2>Your voice</h2>
+      <p>The microphone only opens while you tap to talk; the app does not listen in the background. Your phone's speech recognizer (Android's) turns your voice into text, and Ovilo receives only that text and understands it on the phone. If the language is not downloaded on the phone, that recognizer, which is Google's, may use the internet to transcribe, under <a href="https://policies.google.com/privacy?hl=en">Google's privacy policy</a>.</p>
+      <p>This version does not send your voice or your phrases to our server or to OpenAI. The answers are spoken by the phone's own voice.</p>
+      <h2>What connects to the internet in this version</h2>
       <ul>
-        <li><strong>Your voice.</strong> The microphone only opens while you tap to talk; the app does not listen in the background. That audio goes to our server, which passes it to OpenAI to turn it into text.</li>
-        <li><strong>What you say, as text.</strong> Whatever the phone understands on its own (creating or changing a reminder, for example) is handled there. Everything else — an open question, something it didn't understand — goes to our server and from there to OpenAI to answer you. So the answer makes sense, it is sent together with your name and a summary of your reminders and your most recent notes (up to 15). So don't keep passwords or anything you wouldn't share in your notes.</li>
-        <li><strong>The voice of the answers (Pro plan).</strong> The text of the answer goes to OpenAI to be turned into speech.</li>
-        <li><strong>A random number for this installation.</strong> The app creates it and it is not tied to you or to your phone. It is used to count how many questions you used today and apply your plan's daily limit.</li>
-        <li><strong>The weather.</strong> For the morning briefing, the app asks Open-Meteo for the weather in the city you choose (its coordinates, rounded to about 10 km). The app doesn't use your phone's location. Open-Meteo receives nothing else.</li>
-        <li><strong>An answer you report.</strong> If you tap “Report this answer”, we receive that question and answer to review them. We keep them only while we review them.</li>
+        <li><strong>The weather.</strong> For the morning briefing, the app asks <a href="https://open-meteo.com/">Open-Meteo</a> for the weather using the coordinates of the city you chose, rounded to about 10 km. The app doesn't use your phone's location.</li>
+        <li><strong>The city search.</strong> When you search for your city in Settings, the app sends Open-Meteo the text you type and the app's language, to show you the matching cities.</li>
+        <li><strong>Purchases.</strong> The app asks Google Play whether you have an active plan, and payments go through Google Play.</li>
       </ul>
-      <p>Our server does not store your audio or your phrases: it processes them to answer you and discards them. The only thing it records is what each request cost (date, type and amount of text processed), without the content. OpenAI acts as our service provider: under its business terms it does not use this data to train its models, but it may keep it for up to 30 days to monitor for abuse, and then deletes it. Everything travels encrypted.</p>
+      <p>As with any internet connection, Open-Meteo sees the IP address the request comes from. Beyond that, Open-Meteo only receives the rounded coordinates or the search text with the language. Everything travels encrypted.</p>
+      <h2>When open questions and the pro voice are turned on</h2>
+      <p>A future version may answer open questions with artificial intelligence and speak with a more natural voice. It has no date. Before it arrives, this policy will be updated. This is how it would work:</p>
+      <ul>
+        <li><strong>What you say, as text.</strong> Whatever the phone understands on its own (creating or changing a reminder, for example) would still be handled there. An open question, or something it didn't understand, would go to our server and from there to OpenAI to answer you. So the answer makes sense, it would be sent together with your name and a summary of your reminders and your most recent notes (up to 15). So don't keep passwords or anything you wouldn't share in your notes.</li>
+        <li><strong>The pro voice.</strong> The text of the answer would go to OpenAI to be turned into speech.</li>
+        <li><strong>A random number for this installation.</strong> The app creates it and it is not tied to you or to your phone. It would be used to count how many questions you used today and apply your plan's daily limit.</li>
+        <li><strong>An answer you report.</strong> If you tap “Report this answer”, we would receive that question and answer to review them. We would keep them only while we review them.</li>
+      </ul>
+      <p>Our server would not store your phrases: it would process them to answer you and discard them. It would only record what each request cost (date, type and amount of text processed), without the content. OpenAI would act as our service provider: under its business terms it does not use this data to train its models, but it may keep it for up to 30 days to monitor for abuse, and then deletes it.</p>
       <h2>Notifications</h2>
       <p>Reminders and the alarm clock are scheduled on the phone itself. The notifications library the app uses includes Google's messaging component (Firebase), which may assign the device a technical identifier to deliver notifications. We don't use notifications sent over the internet, and we don't ask for, receive or store that identifier.</p>
       <h2>Permissions</h2>
       <ul>
-        <li><strong>Microphone</strong>, to hear you while you tap to talk.</li>
-        <li><strong>Notifications, exact alarms and full screen</strong>, so a reminder rings on time like an alarm and turns the screen on, even with the phone locked. That is also why the app notices when the phone restarts or the time changes: to schedule them again.</li>
-        <li><strong>Display over other apps</strong> (optional, you turn it on in Settings), to keep your assistant visible on top of other apps. While it is visible, Android shows an ongoing notification from the app.</li>
-        <li><strong>Internet</strong>, for everything described above and for Google Play.</li>
+        <li><strong>Microphone</strong> (RECORD_AUDIO): to hear you while you tap to talk.</li>
+        <li><strong>Audio settings</strong> (MODIFY_AUDIO_SETTINGS): to handle the sound while it listens to you and answers.</li>
+        <li><strong>Notifications</strong> (POST_NOTIFICATIONS): to show you reminders and alarms.</li>
+        <li><strong>Exact alarms</strong> (USE_EXACT_ALARM): so a reminder rings on the exact minute, not “somewhere around that time”.</li>
+        <li><strong>Full screen</strong> (USE_FULL_SCREEN_INTENT): so the alarm turns the screen on and shows in full, even with the phone locked.</li>
+        <li><strong>Keep the phone awake</strong> (WAKE_LOCK): so the phone doesn't go to sleep while an alarm is ringing.</li>
+        <li><strong>Vibration</strong> (VIBRATE): so the alarm also vibrates.</li>
+        <li><strong>Know when the phone has started</strong> (RECEIVE_BOOT_COMPLETED): to schedule your alarms again after a restart. For the same reason, the app notices when the time changes.</li>
+        <li><strong>Internet</strong> (INTERNET): for the weather, the city search and Google Play.</li>
+        <li><strong>Google Play purchases</strong> (BILLING): to buy and check a plan.</li>
       </ul>
       <p>The advertising identifier is deliberately blocked.</p>
       <h2>Advertising</h2>
       <p>There are no ads. No tracking, no profiling, and we don't sell or share data for advertising purposes.</p>
       <h2>Purchases</h2>
-      <p>The Plus and Pro plans are paid through Google Play, with your account. We never see or store your card details. The app asks Google Play whether you have an active plan.</p>
+      <p>The Plus plan is paid through Google Play, with your account. We never see or store your card details: Google handles them.</p>
       <h2>Age</h2>
       <p>Ovilo is for adults and is not directed at children.</p>
       <h2 id="delete" data-borrar>How to delete your data</h2>
-      <p>What lives on the phone is deleted from the app (each reminder and each note) or by uninstalling it. Nothing of yours remains on our server to delete, except an answer you reported. Whatever went through OpenAI is deleted on its own within 30 days at most. To ask us to delete a reported answer or to confirm anything, write to <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <p>What lives on the phone is deleted from the app (each reminder and each note) or by uninstalling it. This version sends nothing of yours to our server, so there is nothing there to delete. To confirm anything, write to <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <h2 id="terms" data-condiciones>Terms of use</h2>
+      <ul>
+        <li>Ovilo is provided as is. We do our best to make it work well, but we can't promise it will never fail.</li>
+        <li>Alarms depend on the phone: battery saving, the permissions you grant and the volume can delay or silence them. Don't use Ovilo instead of a medical alarm or any critical alert.</li>
+        <li>Subscriptions are charged and renewed by Google Play, and are cancelled in Google Play.</li>
+        <li>When a plan has a 7-day free trial, it is given once per Google account. If you don't cancel before it ends, Google Play charges the plan when the trial ends.</li>
+        <li>Don't use the app for anything illegal.</li>
+        <li>If you have a question or a problem, write to <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</li>
+      </ul>
       <h2>Changes to this policy</h2>
       <p>If the app ever does something different with data, this text changes first, and the date above with it.</p>
+      <ul>
+        <li>2026-09-25: this version has no server; the phone's recognizer turns your voice into text. The server and OpenAI part is kept for when open questions are turned on. The “Display over other apps” permission is removed, each permission is explained, what Open-Meteo receives is made precise, and the terms of use are added.</li>
+      </ul>
       <h2>Contact</h2>
       <p>For any privacy question, write to <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. We answer.</p>
     </article>
     <article lang="pt" data-idioma="pt" hidden>
-      <h1>Política de privacidade</h1>
-      <p class="fecha">Última revisão: 2026-09-24</p>
-      <p class="intro">Ovilo é um assistente de voz com alarme. Para te entender ele precisa te ouvir, e para responder perguntas abertas usa inteligência artificial na nuvem. Aqui está, sem letras miúdas, o que sai do celular, para onde vai e o que não sai.</p>
-      <h2>O que fica no celular</h2>
-      <p>Os seus lembretes, as suas notas, o seu nome e os seus ajustes ficam guardados no celular. Não há contas nem cadastro e nunca pedimos e-mail. Desinstalar o aplicativo apaga tudo isso.</p>
-      <h2>O que sai do celular, e só quando você fala com ele</h2>
+      <h1>Política de privacidade e condições de uso</h1>
+      <p class="fecha">Última atualização: 2026-09-25</p>
+      <p class="intro">Ovilo é um assistente de voz com alarme. Esta versão funciona sem servidor próprio: não tem perguntas abertas à inteligência artificial nem voz pro. Aqui está, sem letras miúdas, o que fica guardado no celular, o que se conecta à internet e para quê.</p>
+      <h2>O que fica guardado no celular</h2>
+      <p>Os seus lembretes, as suas notas, o seu nome e os seus ajustes ficam guardados no celular. Não há contas nem cadastro e nunca pedimos e-mail. Se o backup do Android estiver ativado, o Android pode incluir esses dados no backup da sua conta do Google, como faz com outros aplicativos. Desinstalar o aplicativo os apaga do celular.</p>
+      <h2>A sua voz</h2>
+      <p>O microfone só abre enquanto você toca para falar; o aplicativo não escuta em segundo plano. Quem transforma a voz em texto é o reconhecimento de voz do seu celular (o do Android), e o Ovilo recebe só esse texto e o entende no celular. Se o idioma não estiver baixado no celular, esse reconhecimento, que é do Google, pode usar a internet para ditar, segundo a <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do Google</a>.</p>
+      <p>Esta versão não envia a sua voz nem as suas frases para o nosso servidor nem para a OpenAI. As respostas são ditas pela voz do próprio celular.</p>
+      <h2>O que se conecta à internet nesta versão</h2>
       <ul>
-        <li><strong>A sua voz.</strong> O microfone só abre enquanto você toca para falar; o aplicativo não escuta em segundo plano. Esse áudio vai para o nosso servidor, que o passa à OpenAI para virar texto.</li>
-        <li><strong>O que você diz, em texto.</strong> O que o celular entende sozinho (criar ou mudar um lembrete, por exemplo) é resolvido ali. O resto — uma pergunta aberta, algo que ele não entendeu — vai para o nosso servidor e de lá para a OpenAI para te responder. Para a resposta fazer sentido, vai junto com o seu nome e um resumo dos seus lembretes e das suas notas mais recentes (até 15). Por isso, não guarde nas notas senhas nem dados que você não queira compartilhar.</li>
-        <li><strong>A voz das respostas (plano Pro).</strong> O texto da resposta vai para a OpenAI para virar voz.</li>
-        <li><strong>Um número aleatório desta instalação.</strong> O aplicativo o cria e ele não está ligado a você nem ao seu celular. Serve para contar quantas perguntas você usou hoje e aplicar o limite diário do seu plano.</li>
-        <li><strong>O clima.</strong> Para o resumo da manhã, o aplicativo pede o clima à Open-Meteo com a cidade que você escolher (as coordenadas dela, arredondadas a uns 10 km). O aplicativo não usa a localização do celular. A Open-Meteo não recebe mais nada.</li>
-        <li><strong>Uma resposta que você denuncia.</strong> Se você tocar em «Denunciar esta resposta», recebemos essa pergunta e essa resposta para analisar. Guardamos só enquanto analisamos.</li>
+        <li><strong>O clima.</strong> Para o resumo da manhã, o aplicativo pede o clima à <a href="https://open-meteo.com/">Open-Meteo</a> com as coordenadas da cidade que você escolheu, arredondadas a uns 10 km. O aplicativo não usa a localização do celular.</li>
+        <li><strong>A busca de cidade.</strong> Quando você busca a sua cidade nos Ajustes, o aplicativo manda para a Open-Meteo o texto que você digita e o idioma do aplicativo, para mostrar as cidades que correspondem.</li>
+        <li><strong>As compras.</strong> O aplicativo pergunta ao Google Play se você tem um plano ativo, e os pagamentos passam pelo Google Play.</li>
       </ul>
-      <p>O nosso servidor não guarda o seu áudio nem as suas frases: processa para te responder e descarta. A única coisa que ele anota é quanto custou cada consulta (data, tipo e quantidade de texto processado), sem o conteúdo. A OpenAI atua como nossa prestadora de serviço: segundo as condições dela para empresas, não usa esses dados para treinar os seus modelos, mas pode guardá-los por até 30 dias para monitorar abusos, e depois os apaga. Tudo viaja criptografado.</p>
+      <p>Como em toda conexão à internet, a Open-Meteo vê o endereço IP de onde chega a consulta. Fora isso, a Open-Meteo só recebe as coordenadas arredondadas ou o texto da busca com o idioma. Tudo viaja criptografado.</p>
+      <h2>Quando forem ativadas as perguntas abertas e a voz pro</h2>
+      <p>Uma versão futura poderá responder perguntas abertas com inteligência artificial e falar com uma voz mais natural. Não tem data. Antes que ela chegue, esta política será atualizada. Funcionaria assim:</p>
+      <ul>
+        <li><strong>O que você diz, em texto.</strong> O que o celular entende sozinho (criar ou mudar um lembrete, por exemplo) continuaria sendo resolvido ali. Uma pergunta aberta, ou algo que ele não entendeu, iria para o nosso servidor e de lá para a OpenAI para te responder. Para a resposta fazer sentido, iria junto com o seu nome e um resumo dos seus lembretes e das suas notas mais recentes (até 15). Por isso, não guarde nas notas senhas nem dados que você não queira compartilhar.</li>
+        <li><strong>A voz pro.</strong> O texto da resposta iria para a OpenAI para virar voz.</li>
+        <li><strong>Um número aleatório desta instalação.</strong> O aplicativo o cria e ele não está ligado a você nem ao seu celular. Serviria para contar quantas perguntas você usou hoje e aplicar o limite diário do seu plano.</li>
+        <li><strong>Uma resposta que você denuncia.</strong> Se você tocar em «Denunciar esta resposta», receberíamos essa pergunta e essa resposta para analisar. Guardaríamos só enquanto analisamos.</li>
+      </ul>
+      <p>O nosso servidor não guardaria as suas frases: processaria para te responder e descartaria. Só anotaria quanto custou cada consulta (data, tipo e quantidade de texto processado), sem o conteúdo. A OpenAI atuaria como nossa prestadora de serviço: segundo as condições dela para empresas, não usa esses dados para treinar os seus modelos, mas pode guardá-los por até 30 dias para monitorar abusos, e depois os apaga.</p>
       <h2>Avisos</h2>
       <p>Os lembretes e o despertador são programados no próprio celular. A biblioteca de avisos que o aplicativo usa inclui o componente de mensagens do Google (Firebase), que pode atribuir ao aparelho um identificador técnico para entregar avisos. Não usamos avisos enviados pela internet, e esse identificador nós não pedimos, não recebemos nem guardamos.</p>
       <h2>Permissões</h2>
       <ul>
-        <li><strong>Microfone</strong>, para te ouvir enquanto você toca para falar.</li>
-        <li><strong>Notificações, alarmes exatos e tela cheia</strong>, para que um lembrete toque na hora como alarme e acenda a tela, também com o celular bloqueado. Por isso o aplicativo também percebe quando o celular reinicia ou a hora muda: para programá-los de novo.</li>
-        <li><strong>Sobrepor a outros apps</strong> (opcional, você ativa nos Ajustes), para deixar o assistente visível por cima de outros aplicativos. Enquanto ele está visível, o Android mostra um aviso fixo do aplicativo.</li>
-        <li><strong>Internet</strong>, para o que está descrito acima e para o Google Play.</li>
+        <li><strong>Microfone</strong> (RECORD_AUDIO): para te ouvir enquanto você toca para falar.</li>
+        <li><strong>Ajustes de áudio</strong> (MODIFY_AUDIO_SETTINGS): para cuidar do som enquanto ele te escuta e te responde.</li>
+        <li><strong>Notificações</strong> (POST_NOTIFICATIONS): para mostrar os lembretes e os alarmes.</li>
+        <li><strong>Alarmes exatos</strong> (USE_EXACT_ALARM): para que um lembrete toque no minuto certo, não «mais ou menos nessa hora».</li>
+        <li><strong>Tela cheia</strong> (USE_FULL_SCREEN_INTENT): para que o alarme acenda a tela e apareça inteiro, também com o celular bloqueado.</li>
+        <li><strong>Manter o celular acordado</strong> (WAKE_LOCK): para que o celular não durma enquanto um alarme toca.</li>
+        <li><strong>Vibração</strong> (VIBRATE): para que o alarme também vibre.</li>
+        <li><strong>Saber quando o celular ligou</strong> (RECEIVE_BOOT_COMPLETED): para programar os seus alarmes de novo depois de reiniciar. Pelo mesmo motivo, o aplicativo percebe quando a hora muda.</li>
+        <li><strong>Internet</strong> (INTERNET): para o clima, a busca de cidade e o Google Play.</li>
+        <li><strong>Compras do Google Play</strong> (BILLING): para comprar e conferir um plano.</li>
       </ul>
       <p>O identificador de publicidade está bloqueado de propósito.</p>
       <h2>Publicidade</h2>
       <p>Não há anúncios. Não há rastreamento nem perfilamento, e não vendemos nem compartilhamos dados para fins publicitários.</p>
       <h2>Compras</h2>
-      <p>Os planos Plus e Pro são pagos pelo Google Play, com a sua conta. Não vemos nem guardamos os dados do seu cartão. O aplicativo pergunta ao Google Play se você tem um plano ativo.</p>
+      <p>O plano Plus é pago pelo Google Play, com a sua conta. Não vemos nem guardamos os dados do seu cartão: quem cuida deles é o Google.</p>
       <h2>Idade</h2>
       <p>Ovilo é para adultos e não é direcionado a crianças.</p>
       <h2 id="apagar" data-borrar>Como apagar os seus dados</h2>
-      <p>O que fica no celular é apagado pelo aplicativo (cada lembrete e cada nota) ou ao desinstalá-lo. No nosso servidor não fica nada seu para apagar, a não ser uma resposta que você denunciou. O que passou pela OpenAI é apagado sozinho em no máximo 30 dias. Para pedir que apaguemos uma resposta denunciada ou confirmar qualquer coisa, escreva para <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <p>O que fica no celular é apagado pelo aplicativo (cada lembrete e cada nota) ou ao desinstalá-lo. Esta versão não envia nada seu para o nosso servidor, então lá não há nada para apagar. Para confirmar qualquer coisa, escreva para <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</p>
+      <h2 id="condicoes" data-condiciones>Condições de uso</h2>
+      <ul>
+        <li>O Ovilo é oferecido como está. Fazemos o possível para que funcione bem, mas não podemos prometer que nunca falhe.</li>
+        <li>Os alarmes dependem do celular: a economia de bateria, as permissões que você der e o volume podem atrasá-los ou silenciá-los. Não use o Ovilo no lugar de um alarme médico ou de qualquer aviso crítico.</li>
+        <li>As assinaturas são cobradas e renovadas pelo Google Play, e são canceladas no Google Play.</li>
+        <li>Quando um plano tem teste grátis de 7 dias, ele é dado uma vez por conta do Google. Se você não cancelar antes do fim, o Google Play cobra o plano quando o teste termina.</li>
+        <li>Não use o aplicativo para nada ilegal.</li>
+        <li>Se tiver uma dúvida ou um problema, escreva para <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>.</li>
+      </ul>
       <h2>Mudanças nesta política</h2>
       <p>Se o aplicativo passar a fazer algo diferente com os dados, este texto muda antes, e a data acima junto.</p>
+      <ul>
+        <li>2026-09-25: esta versão não tem servidor; quem transforma a voz em texto é o reconhecimento do celular. A parte do servidor e da OpenAI fica para quando as perguntas abertas forem ativadas. Sai a permissão «Sobrepor a outros apps», cada permissão é explicada, fica preciso o que a Open-Meteo recebe e entram as condições de uso.</li>
+      </ul>
       <h2>Contato</h2>
       <p>Para qualquer dúvida sobre privacidade, escreva para <a href="mailto:contacto@gusmarstudios.com">contacto@gusmarstudios.com</a>. Respondemos.</p>
     </article>
@@ -168,9 +249,11 @@
   // Arranca en el idioma del navegador si lo tenemos; si no, español.
   var pref = (navigator.language || 'es').slice(0, 2);
   mostrar(["es","en","pt"].indexOf(pref) >= 0 ? pref : 'es');
-  // #borrar (el enlace de Play) lleva a «Cómo borrar tus datos» en el idioma que se ve.
-  if (['#borrar', '#delete', '#apagar'].indexOf(location.hash) >= 0) {
-    var h = document.querySelector('article:not([hidden]) [data-borrar]');
+  // #borrar (el enlace de Play) y #condiciones (el de la app) llevan a su sección en el idioma que se ve.
+  var destino = { '#borrar': 'borrar', '#delete': 'borrar', '#apagar': 'borrar',
+                  '#condiciones': 'condiciones', '#terms': 'condiciones', '#condicoes': 'condiciones' }[location.hash];
+  if (destino) {
+    var h = document.querySelector('article:not([hidden]) [data-' + destino + ']');
     if (h) h.scrollIntoView();
   }
 </script>
